@@ -19,6 +19,25 @@ p {
 
 }
 
+.section_title{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/*section_titleに議事要素を追加*/
+.section_title::after{
+  display: block;
+
+  font-size:14px;
+  font-weight: 400;
+  padding: 16px 0 16px;
+
+  width: 100px;
+
+  /*下線を直線・1px・黒色に設定*/
+  border-bottom: solid 1px #000000;
+}
+
 
 
 /* ----------------------------------------------- ナビゲーションバー */
@@ -110,7 +129,14 @@ my_carousel_caption::before{
 
 
 /* ----------------------------------------------- アバウト */
+/*aboutクラスのあとに"私たちについて"の文字を追加*/
+.about::after{
+  content: "私たちについて";
+}
 
+.about_us_bg{
+  background-color: #FFE6A5;
+}
 
 
 
