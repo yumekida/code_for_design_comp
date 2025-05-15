@@ -142,13 +142,31 @@ my_carousel_caption::before{
 
 
 /* ----------------------------------------------- ギャラリー */
-
+.gallery::after{
+  content: "ギャラリー";
+  margin: 0 auto 0;
+}
 
 
 
 
 /* ----------------------------------------------- メニュー */
+.menu::after{
+  content: "メニュー";
+  margin: 0 auto 0;
+}
 
+.menu_title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.menu_price{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+}
 
 
 
