@@ -172,13 +172,60 @@ my_carousel_caption::before{
 
 
 /* ----------------------------------------------- レビュー */
+/*背景画像を設定*/
+.review_wrapper{
+  background-image: url(../img/background-reviews.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/*サブタイトルを疑似要素で表示*/
+review::after{
+  content: "お客様の声";
+  margin: 0 auto 0;
+  border-bottom: solid 1px #FFFFFF;
+}
+
+/*白い背景の高さを固定*/
+.h_420{
+  height: 420px;
+  position: relative;
+}
+
+/*レビューの画像を修正*/
+.reviewer_img{
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+/*星のアイコン画像*/
+.star_img{
+  width: 25px;
+  height: 25px;
+}
+
+/*詳細ボタンを下部に固定*/
+.fix_bottom{
+  /*positionプロパティで絶対配置*/
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+
+  width: 80px;
+  height: 44px;
+}
 
 
 
 
 /* ----------------------------------------------- アクセス */
-
+.access::after{
+  content: "アクセス";
+  margin: 0 auto 0;
+}
 
 
 
