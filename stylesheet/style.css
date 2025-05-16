@@ -231,3 +231,59 @@ review::after{
 
 
 /* ----------------------------------------------- フッター */
+#footer{
+  background-color: #FAFAFA;
+}
+
+.copy_right{
+  font-size: 14px;
+  position: absolute;
+
+  bottom: 1rem;
+  left: 12px;
+  display: flex;
+}
+
+.copy_right>p{
+  margin-right: 5rem;
+  margin-bottom: 0;
+}
+
+.copy_right>img.sns_img{
+  height: 24px;
+  width: 24px;
+
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.restaurant_info p{
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.restaurant_info img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+/*スマートフォン画面幅*/
+@media screen and (max-width: 991px){
+  .footer_text,
+  .copy_right{
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .copy_right>p,img{
+    margin-right: 1rem;
+    font-size: 14px;
+    margin: 0;
+    line-height: 35px;
+  }
+}
